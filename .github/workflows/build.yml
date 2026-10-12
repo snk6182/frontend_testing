@@ -58,7 +58,7 @@ jobs:
 
             docker run -d \
               --name frontend-testing \
-              -p 8090:80 \
+              -p 8090:5173 \
               ${{ secrets.DOCKER_USERNAME }}/frontend-books:v1
 
             docker ps
